@@ -1,0 +1,28 @@
+
+.today-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: 3px solid black;
+    border-radius: 15px;
+    width: 15vw;
+    height: 15vw;
+}
+
+.today-weather-image, .day0-img, .day1-img, .day2-img {
+    display: none;
+    height: 40%;
+}
+
+.future-wrapper {
+    display: flex;
+    gap: 40px;
+}

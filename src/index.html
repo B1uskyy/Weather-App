@@ -5,6 +5,42 @@
     <title>Title</title>
 </head>
 <body>
+<div class="wrapper">
+    <label>Enter location you with for to know weather for</label><br>
+    <input type="text" class="locationInput">
+    <button class="submitbtn">Submit</button>
 
+    <div class="today-weather">
+        <h1>Todays weather in:</h1>
+        <h2 class="city"></h2>
+        <div class="weather-box">
+            <img src="#"  class="today-weather-image">
+            <p class="today-temp"></p>
+        </div>
+    </div>
+
+
+    <div class="future-weather">
+        <div class="future-weather-boxes">
+            <h2>Weather next 3 days: </h2>
+            <div class="future-wrapper">
+                <div class="weather-box" id="day0">
+                    <img src="#"  class="day0-img">
+                    <p class="day0-temp"></p>
+                </div>
+
+                <div class="weather-box" id="day1">
+                    <img src="#"  class="day1-img">
+                    <p class="day1-temp"></p>
+                </div>
+
+                <div class="weather-box" id="day2">
+                    <img src="#"  class="day2-img">
+                    <p class="day2-temp"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
