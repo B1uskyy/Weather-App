@@ -10,6 +10,7 @@ const URL =
 
 let locationInput = document.querySelector(".locationInput");
 let submit = document.querySelector(".submitbtn");
+let weatherBox = document.querySelectorAll(".weather-box");
 
 async function getWeatherFromLocation(location) {
   const response = await fetch(
@@ -30,7 +31,12 @@ async function getWeatherFromLocation(location) {
   days.forEach((day) => {
     let temp = responseData.days[day].temp;
     let icon = responseData.days[day].icon;
-    displayFutureWeather(day, icon, temp);
+    let date = responseData.days[day].datetime;
+    displayFutureWeather(day, icon, temp, date);
+  });
+
+  weatherBox.forEach((weatherBox) => {
+    weatherBox.style.outline = "3px solid black";
   });
 
   console.log(responseData);
